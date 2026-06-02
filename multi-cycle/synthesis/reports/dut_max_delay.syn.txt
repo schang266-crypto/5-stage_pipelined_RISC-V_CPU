@@ -1,0 +1,137 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : hart
+Version: X-2025.06
+Date   : Tue Jun  2 02:27:10 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_id_ex_reg/o_rs1_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_fetch/o_pc_4_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hart               35000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_id_ex_reg/o_rs1_reg[1]/CLK (DFFX1_RVT)                0.00 #     0.00 r
+  u_id_ex_reg/o_rs1_reg[1]/QN (DFFX1_RVT)                 0.13       0.13 r
+  U5100/Y (XNOR2X1_RVT)                                   0.14       0.27 r
+  U4170/Y (AND4X1_RVT)                                    0.09       0.36 r
+  U4169/Y (NAND4X0_RVT)                                   0.10       0.45 f
+  U4168/Y (NAND4X0_RVT)                                   0.08       0.54 r
+  U5095/Y (OR2X1_RVT)                                     0.08       0.62 r
+  U4750/Y (AND2X1_RVT)                                    0.08       0.70 r
+  U4500/Y (NBUFFX2_RVT)                                   0.07       0.76 r
+  U4320/Y (NBUFFX2_RVT)                                   0.07       0.84 r
+  U4056/Y (AO222X1_RVT)                                   0.11       0.95 r
+  U5116/Y (AO22X2_RVT)                                    0.12       1.08 r
+  u_execute/u_alu/add_40/U1_2/CO (FADDX1_RVT)             0.20       1.28 r
+  u_execute/u_alu/add_40/U1_3/CO (FADDX1_RVT)             0.12       1.40 r
+  u_execute/u_alu/add_40/U1_4/CO (FADDX1_RVT)             0.12       1.51 r
+  u_execute/u_alu/add_40/U1_5/CO (FADDX1_RVT)             0.12       1.63 r
+  u_execute/u_alu/add_40/U1_6/CO (FADDX1_RVT)             0.12       1.75 r
+  u_execute/u_alu/add_40/U1_7/CO (FADDX1_RVT)             0.12       1.87 r
+  u_execute/u_alu/add_40/U1_8/CO (FADDX1_RVT)             0.12       1.98 r
+  u_execute/u_alu/add_40/U1_9/CO (FADDX1_RVT)             0.12       2.10 r
+  u_execute/u_alu/add_40/U1_10/CO (FADDX1_RVT)            0.12       2.22 r
+  u_execute/u_alu/add_40/U1_11/CO (FADDX1_RVT)            0.12       2.33 r
+  u_execute/u_alu/add_40/U1_12/CO (FADDX1_RVT)            0.12       2.45 r
+  u_execute/u_alu/add_40/U1_13/CO (FADDX1_RVT)            0.12       2.57 r
+  u_execute/u_alu/add_40/U1_14/CO (FADDX1_RVT)            0.12       2.69 r
+  u_execute/u_alu/add_40/U1_15/CO (FADDX1_RVT)            0.12       2.80 r
+  u_execute/u_alu/add_40/U1_16/CO (FADDX1_RVT)            0.12       2.92 r
+  u_execute/u_alu/add_40/U1_17/CO (FADDX1_RVT)            0.12       3.04 r
+  u_execute/u_alu/add_40/U1_18/CO (FADDX1_RVT)            0.12       3.16 r
+  u_execute/u_alu/add_40/U1_19/CO (FADDX1_RVT)            0.12       3.27 r
+  u_execute/u_alu/add_40/U1_20/CO (FADDX1_RVT)            0.12       3.39 r
+  u_execute/u_alu/add_40/U1_21/CO (FADDX1_RVT)            0.12       3.51 r
+  u_execute/u_alu/add_40/U1_22/CO (FADDX1_RVT)            0.12       3.63 r
+  u_execute/u_alu/add_40/U1_23/CO (FADDX1_RVT)            0.12       3.74 r
+  u_execute/u_alu/add_40/U1_24/CO (FADDX1_RVT)            0.12       3.86 r
+  u_execute/u_alu/add_40/U1_25/CO (FADDX1_RVT)            0.12       3.98 r
+  u_execute/u_alu/add_40/U1_26/CO (FADDX1_RVT)            0.12       4.10 r
+  u_execute/u_alu/add_40/U1_27/CO (FADDX1_RVT)            0.12       4.21 r
+  u_execute/u_alu/add_40/U1_28/CO (FADDX1_RVT)            0.12       4.33 r
+  u_execute/u_alu/add_40/U1_29/CO (FADDX1_RVT)            0.12       4.45 r
+  u_execute/u_alu/add_40/U1_30/CO (FADDX1_RVT)            0.12       4.57 r
+  u_execute/u_alu/add_40/U1_31/Y (XOR3X1_RVT)             0.09       4.66 f
+  U3735/Y (AOI22X1_RVT)                                   0.09       4.74 r
+  U3711/Y (NAND4X0_RVT)                                   0.09       4.83 f
+  U180/Y (NOR4X1_RVT)                                     0.17       5.00 r
+  U3633/Y (AND4X1_RVT)                                    0.08       5.08 r
+  U3273/Y (NAND4X0_RVT)                                   0.06       5.14 f
+  U4952/Y (AND3X1_RVT)                                    0.09       5.23 f
+  U5108/Y (INVX1_RVT)                                     0.05       5.29 r
+  U4501/Y (INVX1_RVT)                                     0.05       5.34 f
+  U4322/Y (INVX1_RVT)                                     0.04       5.38 r
+  U4321/Y (INVX1_RVT)                                     0.07       5.45 f
+  u_fetch/U31/Y (NAND3X0_RVT)                             0.09       5.53 r
+  u_fetch/U32/Y (INVX1_RVT)                               0.03       5.57 f
+  u_fetch/U5/Y (NBUFFX2_RVT)                              0.06       5.62 f
+  u_fetch/U17/Y (NBUFFX2_RVT)                             0.07       5.69 f
+  u_fetch/U98/Y (AO222X1_RVT)                             0.12       5.81 f
+  u_fetch/add_27/U35/Y (INVX0_RVT)                        0.06       5.87 r
+  u_fetch/add_27/U30/Y (INVX0_RVT)                        0.04       5.91 f
+  u_fetch/add_27/U152/Y (NAND2X0_RVT)                     0.05       5.95 r
+  u_fetch/add_27/U31/Y (INVX0_RVT)                        0.05       6.00 f
+  u_fetch/add_27/U107/Y (AND2X1_RVT)                      0.07       6.08 f
+  u_fetch/add_27/U106/Y (AND2X1_RVT)                      0.06       6.14 f
+  u_fetch/add_27/U115/Y (AND2X1_RVT)                      0.06       6.19 f
+  u_fetch/add_27/U141/Y (NAND2X0_RVT)                     0.04       6.24 r
+  u_fetch/add_27/U17/Y (NAND2X0_RVT)                      0.04       6.28 f
+  u_fetch/add_27/U140/Y (NAND2X0_RVT)                     0.05       6.33 r
+  u_fetch/add_27/U55/Y (INVX0_RVT)                        0.04       6.37 f
+  u_fetch/add_27/U139/Y (NAND2X0_RVT)                     0.05       6.42 r
+  u_fetch/add_27/U28/Y (INVX0_RVT)                        0.04       6.46 f
+  u_fetch/add_27/U138/Y (NAND2X0_RVT)                     0.05       6.52 r
+  u_fetch/add_27/U29/Y (INVX0_RVT)                        0.04       6.56 f
+  u_fetch/add_27/U105/Y (AND2X1_RVT)                      0.07       6.62 f
+  u_fetch/add_27/U137/Y (INVX1_RVT)                       0.04       6.67 r
+  u_fetch/add_27/U12/Y (OA21X1_RVT)                       0.08       6.75 r
+  u_fetch/add_27/U11/Y (OA21X1_RVT)                       0.08       6.83 r
+  u_fetch/add_27/U10/Y (OA21X1_RVT)                       0.09       6.92 r
+  u_fetch/add_27/U9/Y (OA21X1_RVT)                        0.08       7.00 r
+  u_fetch/add_27/U8/Y (OA21X1_RVT)                        0.09       7.08 r
+  u_fetch/add_27/U7/Y (OA21X1_RVT)                        0.08       7.17 r
+  u_fetch/add_27/U6/Y (OA21X1_RVT)                        0.09       7.25 r
+  u_fetch/add_27/U5/Y (OA21X1_RVT)                        0.08       7.33 r
+  u_fetch/add_27/U4/Y (OA21X1_RVT)                        0.09       7.42 r
+  u_fetch/add_27/U33/Y (INVX0_RVT)                        0.03       7.45 f
+  u_fetch/add_27/U108/Y (AND2X1_RVT)                      0.06       7.52 f
+  u_fetch/add_27/U127/Y (AND2X1_RVT)                      0.07       7.58 f
+  u_fetch/add_27/U128/Y (AND2X1_RVT)                      0.06       7.64 f
+  u_fetch/add_27/U57/Y (INVX0_RVT)                        0.04       7.68 r
+  u_fetch/add_27/U56/Y (XNOR2X1_RVT)                      0.12       7.80 r
+  u_fetch/U133/Y (AO22X1_RVT)                             0.07       7.86 r
+  u_fetch/o_pc_4_reg[31]/D (DFFX1_RVT)                    0.01       7.88 r
+  data arrival time                                                  7.88
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.00       8.00
+  u_fetch/o_pc_4_reg[31]/CLK (DFFX1_RVT)                  0.00       8.00 r
+  library setup time                                     -0.05       7.95
+  data required time                                                 7.95
+  --------------------------------------------------------------------------
+  data required time                                                 7.95
+  data arrival time                                                 -7.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+1
